@@ -16,9 +16,18 @@
  var choiceA= document.getElementById("A")
  var choiceB= document.getElementById("B")
  var choiceC= document.getElementById("C")
+   array = [ a,b,c,d]
 
- let questions = [
+var lastQUestionIndex = questions.length - 1; Array.length -> 4 array[3] -> d  
+var runningQuestionIndex = 0;
+ function renderQuestions()
+ for q = questions[runningQuestionIndex];
      {
-        question;"what does HTML stand for?",
-         
+        question:"what does HTML stand for?",
+         imgSrc: 
+         choiceA: "Hyper Text Markup Language"
+         choiceB: "Hyperlinks and Text Markup Language"
+         choiceC:"Home Tool Markup Language"
+         correct: "A"
      }
+
