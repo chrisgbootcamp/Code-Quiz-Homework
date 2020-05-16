@@ -1,0 +1,45 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+</style>
+
+html, body {
+  background-color:white;
+  font-family: 'Fira Sans', sans-serif;}
+h1, h2, a, span {
+  color: black;
+}
+
+#score-list {
+  font-size: 1.2rem;
+  color: dimgrey;
+  font-family: 'Fira Sans', sans-serif;}
+
+}
+ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+li {
+  counter-increment: li;
+}
+
+li::before {
+  content: "." counter(li);
+  color: orange;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1.5rem;
+  margin-right: 0.5rem;
+  text-align: right;
+  direction: rtl;
+}
+
+hr {
+  height: 2px;
+  background-color:orange;
+}
+
+#scoresTitle {
+  padding-left: 1rem;
+}
